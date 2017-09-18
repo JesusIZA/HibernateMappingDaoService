@@ -17,6 +17,8 @@ public interface ProjectDAO {
     //read
     List<Project> getAll() throws SQLException;
 
+    Project getById(Long id) throws SQLException;
+
     //update
     void update(Project project) throws SQLException;
 
