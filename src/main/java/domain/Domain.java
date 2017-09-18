@@ -50,9 +50,12 @@ public class Domain {
         projects.add(project);
         employee.setProjects(projects);
 
-        addressService.add(address);
+        /*addressService.add(address);
         employeeService.add(employee);
-        projectService.add(project);
+        projectService.add(project);*/
+
+        Address address1 = addressService.getById(1L);
+        System.out.println(address1);
 
         HibernateUtil.shutdown();
     }
